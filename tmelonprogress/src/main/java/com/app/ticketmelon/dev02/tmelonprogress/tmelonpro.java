@@ -47,7 +47,9 @@ public class tmelonpro extends View {
 
 
         a.recycle();
-
+        m = new runnn();
+        //mHandler2.postDelayed(m,20);
+        thr = new Thread(m);
 
     }
 
@@ -62,9 +64,7 @@ public class tmelonpro extends View {
             Progress.drawCanvas1(canvas,new RectF(0,0,getWidth(),getHeight()), Progress.ResizingBehavior.AspectFit,0,0);
 
 
-            m = new runnn();
-            //mHandler2.postDelayed(m,20);
-            thr = new Thread(m);
+
 
             r = 0;
         }else{
